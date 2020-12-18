@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  db:
+    image: mariadb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ojitter
+      MYSQL_DATABASE: ojitter
+    volumes:
+      - ./db/data:/var/lib/mysql
